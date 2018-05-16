@@ -16,7 +16,7 @@ Restaurant Reviews main functionality is to show a map and list of all the resta
 
 
 ### Geeting started 
----
+---------------------
 
 ## Prerequisites
 
@@ -34,6 +34,8 @@ Restaurant Reviews main functionality is to show a map and list of all the resta
 ### Licsense 
 ---
 All code added after forking base project - Copyright @2018- Anna Shilova.
-See the code owners file for a full list of owners. Or go to the <a href="https://github.com/udacity/mws-restaurant-stage-1"> base project</a>.
+See the code owners file for a full list of owners. Or go to the <a href="https://github.com/udacity/mws-restaurant-stage-1"> base project</a>. 
+
+
 
 
