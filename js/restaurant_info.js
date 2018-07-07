@@ -74,7 +74,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
  * Create restaurant operating hours HTML table and add it to the webpage.
  */
 fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => {
-  const hours = document.getElementById('restaurant-hours');
+  const hours = document.getElementById('restaurant-hours-flexible');
   for (let key in operatingHours) {
     const row = document.createElement('tr');
 

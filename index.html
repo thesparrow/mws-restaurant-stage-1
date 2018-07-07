@@ -30,35 +30,53 @@
 <body>
   <header>
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1>
+        <a href="/">Restaurant Reviews</a>
+      </h1>
     </nav>
   </header>
 
   <main id="maincontent">
     <section id="map-container">
+        <section id="map-container" aria-labelledby="map-aria-description" role="application">
       <div id="map"></div>
     </section>
+    <label id="map-aria-description" class="map-aria-description">Google map application</label>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-labelledby="neighborhoods-label">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+
+        <label id="neighborhoods-label" class="filter-label">by neighborhoods</label> 
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-labelledby="cuisines-label">
           <option value="all">All Cuisines</option>
         </select>
+        <label id="cuisines-label" class="filter-label">by cuisines</label>
       </div>
       <ul id="restaurants-list"></ul>
     </section>
   </main>
 
+  <footer id="footer">
+    Copyright (c) 2018 
+    <a href="/">
+      <span>
+          <strong id="company-name">Restaurant Reviews</strong>        
+      </span>
+    </a>
+       All Rights Reserved.
+  </footer>
+
+  <!-- Beginning scripts -->
+
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+
   <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap"></script>
 
-  <footer id="footer">
-    Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
-  </footer>
+  <!-- End scripts -->
 
 </body>
 

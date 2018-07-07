@@ -12,6 +12,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  
 
   <!--Mobile Theme Header-->
   <meta name="theme-color" content="#f3f3f3">
@@ -42,23 +43,52 @@
     <!-- End nav -->
   </header>
   <!-- End header -->
-
+  
   <!-- Beginning main -->
   <main id="maincontent">
-    <!-- Beginning map -->
-    <section id="map-container">
-      <div id="map"></div>
-    </section>
-    <!-- End map -->
+  
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
+        <h2 id="restaurant-name"></h2>
+        <img id="restaurant-img">
+        <p id="restaurant-cuisine"></p>
+      </section>
+
+      <section id="restaurant-address-hours">
+        <p id="restaurant-address" aria-labelledby="restaurant-address-label"></p>
+        <label id="restaurant-address-label" class="restaurant-info-label">address</label>
+        <!-- Beginning map -->
+        <section id="map-container" aria-labelledby="map-aria-description" role="application">
+          <div id="map"></div>
+        </section>
+        <label id="map-aria-description" class="map-aria-description">Google map application</label>
+        <!-- End map -->
+        <div id="restaurant-hours-flexible">
+          <table id="restaurant-hours" aria-labelledby="restaurant-hours-label"></table>
+          <label id="restaurant-hours-label" class="restaurant-info-label">hours of operation</label>
+        </div>
+      </section>
+      <!-- end restaurant -->
+
+
+    <!--<img id="restaurant-img">-->
+    
+    <!-- Beginning map -->
+    <!--<section id="map-container" aria-labelledby="map-aria-description" role="application">
+        <div id="map"></div>
+    </section>
+      <label id="map-aria-description" class="map-aria-description">Google map application</label>-->
+    <!-- End map -->
+
+    <!-- Beginning restaurant -->
+    <!--<section id="restaurant-container">
+      <h1 id="restaurant-name"></h1>  
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
-    </section>
+      <table id="restaurant-hours-flexible"></table>
+    </section>-->
     <!-- end restaurant -->
+
     <!-- Beginning reviews -->
     <section id="reviews-container">
       <ul id="reviews-list"></ul>
@@ -70,19 +100,23 @@
   <!-- Beginning footer -->
   <footer id="footer">
     Copyright (c) 2017
-    <a href="/">
-      <strong>Restaurant Reviews</strong>
+    
+    <a class="footer-company-name"href="/">
+      <span>
+        <strong class="company-name">Restaurant Reviews</strong>        
+        </span>
     </a> All Rights Reserved.
   </footer>
   <!-- End footer -->
 
   <!-- Beginning scripts -->
-  <!-- Database helpers -->
+  
   <script type="text/javascript" src="js/dbhelper.js"></script>
-  <!-- Main javascript file -->
   <script type="text/javascript" src="js/restaurant_info.js"></script>
+
   <!-- Google Maps -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap"></script>
+  
   <!-- End scripts -->
 
 </body>
