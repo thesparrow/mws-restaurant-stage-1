@@ -19,11 +19,13 @@ self.addEventListener('install', e => {
           `/css/styles.css`,
           `/js/main.js`,
           `/js/dbhelper.js`,
-          `/js/restaurant_info.js`
+          `/js/restaurant_info.js`,
+          `/js/register.js`
         ])
-            .then(() => self.skipWaiting());
-      })
-    );
+          .catch(error => {
+            console.log("Caches open failed: " + error);
+        });
+      }));
   });
 
   self.addEventListener('activate', event => {
