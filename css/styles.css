@@ -130,7 +130,6 @@ nav h1 a {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100px;
 }
 .filter-options h2 {
   color: white;
@@ -157,16 +156,13 @@ nav h1 a {
   padding: 30px 15px 60px;
   text-align: center;
 
-/*display: -webkit-box;*/
   display: flex;
-  display: -ms-flexbox;
+  flex-direction: row;
   flex-wrap: wrap;
-  flex-direction: row; 
+  justify-content: center;
 
-  -ms-flex-wrap: wrap;
   -ms-flex-direction: row;
-  -webkit-flex-flow: row wrap; 
-  flex-flow: row wrap; 
+  -ms-flex-wrap:wrap;
 
 }
 #restaurants-list li {
@@ -178,11 +174,11 @@ nav h1 a {
   padding: 0 30px 25px;
   text-align: left;
 
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
-  flex: 150px !important;
-  flex-direction: column;
-  width: calc(100% * (1/4) - 10px - 1px);
+  min-height: 380px;
+  padding: 10px 20px 25px;
+  text-align: left;
+  min-width: 270px;
+  max-width: 300px;
   margin: .5vw; 
 }
 #restaurants-list .restaurant-img {
@@ -192,6 +188,8 @@ nav h1 a {
   display: block;
   margin: 10px 0px;
   max-width: 100%;
+  
+  overflow: hidden;
 }
 #restaurants-list li h1 {
   color: #931621; /* #f18200;*/
@@ -288,7 +286,6 @@ nav h1 a {
 #restaurant-hours {
   width: 100%;
   max-width: 500px;
-  background-color: red;
 }
 #restaurant-hours tr td:first-of-type {
   width: 40%;
@@ -376,11 +373,10 @@ nav h1 a {
   }
   .filter-options {
       flex-direction: column;
-      background-color: red;
   }
 
   .filter-options h2 {
-    margin: 2px 0px; 
+    margin: 10px 0px 10px 0px;
   }
 
   #footer {
