@@ -19,8 +19,7 @@ self.addEventListener('install', e => {
           `/css/styles.css`,
           `/js/main.js`,
           `/js/dbhelper.js`,
-          `/js/restaurant_info.js`,
-          `/js/register.js`
+          `/js/restaurant_info.js`
         ])
           .catch(error => {
             console.log("Caches open failed: " + error);

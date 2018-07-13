@@ -1,3 +1,5 @@
+/* Make a direct call to the function*/
+(function() {
 /* Set up our service worker */
 
 if('serviceWorker' in navigator) {
@@ -11,3 +13,4 @@ if('serviceWorker' in navigator) {
        console.log('Service Worker Ready');
     });
   }
+})();

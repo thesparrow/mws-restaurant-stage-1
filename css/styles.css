@@ -86,7 +86,6 @@ nav h1 a {
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
-    /*padding: 1.5em;	*/
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -390,7 +389,5 @@ nav h1 a {
     font-size: 14px;
     margin-bottom: 20px;
   }
-
-
 
 }
